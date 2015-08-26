@@ -84,7 +84,6 @@ public class FtcEventLoop implements EventLoop, BatteryChecker.BatteryWatcher {
   @Override
   public void init(EventLoopManager eventLoopManager) throws RobotCoreException, InterruptedException {
     DbgLog.msg("======= INIT START =======");
-
     opModeManager.registerOpModes(new FtcOpModeRegister());
 
     ftcEventLoopHandler.init(eventLoopManager);
